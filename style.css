@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0d1117;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  background: #161b22;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h2 {
+  color: #00d9ff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00d9ff;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00d9ff;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #00d9ff;
+}
+
+.hero p {
+  color: #b0b8c4;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #00d9ff;
+  color: #0d1117;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: white;
+}
+
+h2.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+  color: #00d9ff;
+}
+
+.about {
+  background: #161b22;
+  text-align: center;
+}
+
+.about p {
+  max-width: 750px;
+  margin: auto;
+  color: #c9d1d9;
+}
+
+.info {
+  margin-top: 25px;
+  line-height: 2;
+}
+
+.skills-container,
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00d9ff;
+}
+
+.card h3 {
+  color: #00d9ff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #b0b8c4;
+}
+
+.contact {
+  background: #161b22;
+  text-align: center;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+.contact-link {
+  color: #00d9ff;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d1117;
+  color: #8b949e;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  nav a {
+    margin: 0 7px;
+    font-size: 14px;
+  }
+  
+  .hero h1 {
+    font-size: 30px;
+  }
+  
+  section {
+    padding: 60px 6%;
+  }
+}
